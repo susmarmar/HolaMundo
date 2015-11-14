@@ -1,0 +1,24 @@
+From ba337d9c31f512461f2adf89446d4c2989476988 Mon Sep 17 00:00:00 2001
+From: susmarmar <susikawa636@gmail.com>
+Date: Tue, 20 Oct 2015 16:40:01 +0200
+Subject: [PATCH] =?UTF-8?q?A=C3=B1adir=20archivo=20.gitignore?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Se añade este archivo para ignorar la virulilla
+---
+ .gitignore | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..b25c15b
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1 @@
++*~
+-- 
+1.9.1
+

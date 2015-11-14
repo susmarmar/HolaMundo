@@ -1,0 +1,71 @@
+From c3f5f8fcda40e2d5daada663abcf3f15fbf67508 Mon Sep 17 00:00:00 2001
+From: susmarmar <susikawa636@gmail.com>
+Date: Sat, 14 Nov 2015 12:24:42 +0100
+Subject: [PATCH] =?UTF-8?q?Renombrado=20y=20exportaci=C3=B3n=20sin=20commi?=
+ =?UTF-8?q?t?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Se prueba el renombrado del fichero count1to10 a count.
+Se exporta el fichero de un cambio en el archivo renombrado.
+---
+ count.py             |  5 +++++
+ count1to10.py        |  4 ----
+ fichero-cambio.patch | 21 +++++++++++++++++++++
+ 3 files changed, 26 insertions(+), 4 deletions(-)
+ create mode 100644 count.py
+ delete mode 100644 count1to10.py
+ create mode 100644 fichero-cambio.patch
+
+diff --git a/count.py b/count.py
+new file mode 100644
+index 0000000..4e2d4b0
+--- /dev/null
++++ b/count.py
+@@ -0,0 +1,5 @@
++for n in range(1,11):
++	print n
++	print n
++
++
+diff --git a/count1to10.py b/count1to10.py
+deleted file mode 100644
+index 831f786..0000000
+--- a/count1to10.py
++++ /dev/null
+@@ -1,4 +0,0 @@
+-for n in range(1,11):
+-	print n
+-
+-
+diff --git a/fichero-cambio.patch b/fichero-cambio.patch
+new file mode 100644
+index 0000000..3af0338
+--- /dev/null
++++ b/fichero-cambio.patch
+@@ -0,0 +1,21 @@
++diff --git a/count.py b/count.py
++new file mode 100644
++index 0000000..4e2d4b0
++--- /dev/null
+++++ b/count.py
++@@ -0,0 +1,5 @@
+++for n in range(1,11):
+++	print n
+++	print n
+++
+++
++diff --git a/count1to10.py b/count1to10.py
++deleted file mode 100644
++index 831f786..0000000
++--- a/count1to10.py
+++++ /dev/null
++@@ -1,4 +0,0 @@
++-for n in range(1,11):
++-	print n
++-
++-
+-- 
+1.9.1
+
